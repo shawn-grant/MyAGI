@@ -2,7 +2,7 @@
 var VoiceOutput = document.getElementsByClassName('VoiceOutput')[0];
 
 function Welcome(){
-  VoiceOutput.src = "https://translate.google.com/translate_tts?ie=UTF-8&tl=en-GB&client=tw-ob&q=Hello%20My%20name%20is%20Myagi";
+  VoiceOutput.src = "https://translate.google.com/translate_tts?ie=UTF-8&tl=en-AU&client=tw-ob&q=Hello%20My%20name%20is%20Myagi";
   VoiceOutput.play();
 }
 
@@ -31,7 +31,3 @@ recognition.addEventListener('result', e => {
   //}
 
 });
-
-recognition.addEventListener('end', recognition.start);
-
-recognition.start();
